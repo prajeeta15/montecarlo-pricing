@@ -1,27 +1,41 @@
-# MonteCarlo Pricing Model
+# 🧮 Monte Carlo Option Pricing Model
 
-This repository provides an interactive Black-Scholes Pricing Model dashboard that helps in visualizing option prices under varying conditions. The dashboard is designed to be user-friendly and interactive, allowing users to explore how changes in spot price, volatility, and other parameters influence the value of options.
+This repository hosts an interactive **Monte Carlo-based Option Pricing Dashboard** built using Streamlit. It allows users to visualize how **Call and Put options** behave under different market conditions using a simulation-based approach rather than a closed-form Black-Scholes formula.
 
-https://blackschole.streamlit.app/
+🔗 **Live App**: [https://montecarlo.streamlit.app/](https://montecarlo.streamlit.app/)  
+> *(Note: The app may still refer to Black-Scholes on the frontend UI — feel free to update it to reflect Monte Carlo if needed.)*
 
-## 🚀 Features:
+---
 
-1. **Options Pricing Visualization**: 
-   - Displays both Call and Put option prices using an interactive heatmap.
-   - The heatmap dynamically updates as you adjust parameters like Spot Price, Volatility, and Time to Maturity.
-   
-2. **Interactive Dashboard**:
-   - The dashboard allows real-time updates to the Black-Scholes model parameters.
-   - Users can input different values for the Spot Price, Volatility, Strike Price, Time to Maturity, and Risk-Free Interest Rate to observe how these factors influence option prices.
-   - Both Call and Put option prices are calculated and displayed for immediate comparison.
-   
-3. **Customizable Parameters**:
-   - Set custom ranges for Spot Price and Volatility to generate a comprehensive view of option prices under different market conditions.
+## 🚀 Features
 
-## 🔧 Dependencies:
+### 1. 🎯 Monte Carlo Simulation for Options Pricing
+- Simulates thousands of possible asset price paths.
+- Calculates expected Call and Put option prices based on payoff distributions.
+- Provides a probabilistic estimate more suitable for less ideal/efficient markets (like the Indian options market).
 
-- `yfinance`: To fetch current asset prices.
-- `numpy`: For numerical operations.
-- `matplotlib`: For heatmap visualization.
+### 2. 📊 Interactive Heatmaps
+- Real-time heatmap generation for Call and Put prices.
+- Visualizes how option prices vary with different:
+  - Spot Prices
+  - Volatility levels
+  - Strike Price
+  - Time to Maturity
+  - Interest Rates
 
+### 3. ⚙️ Customizable Input Parameters
+- Modify key financial parameters using sliders or inputs in the sidebar.
+- Compare Call vs. Put prices side-by-side in a visually enhanced dashboard.
 
+### 4. 🌐 Built with Streamlit
+- Responsive and clean UI.
+- Easy to deploy via [Streamlit Community Cloud](https://streamlit.io/cloud).
+
+---
+
+## 📦 Requirements
+
+To run locally, install the dependencies:
+
+```bash
+pip install -r requirements.txt
