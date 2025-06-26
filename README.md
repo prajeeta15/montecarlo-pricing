@@ -2,10 +2,7 @@
 
 This repository hosts an interactive **Monte Carlo-based Option Pricing Dashboard** built using Streamlit. It allows users to visualize how **Call and Put options** behave under different market conditions using a simulation-based approach rather than a closed-form Black-Scholes formula.
 
-🔗 **Live App**: [https://montecarlo.streamlit.app/](https://montecarlo.streamlit.app/)  
-> *(Note: The app may still refer to Black-Scholes on the frontend UI — feel free to update it to reflect Monte Carlo if needed.)*
-
----
+🔗 **Live App**: [https://montecarlo-pricing.streamlit.app/](https://montecarlo-pricing.streamlit.app/)  
 
 ## 🚀 Features
 
